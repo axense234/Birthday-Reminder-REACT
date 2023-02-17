@@ -1,57 +1,14 @@
-img {
-  width: 75px;
-  height: 75px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-right: 1rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-/* Age */
-p {
-  margin-top: 0.5rem;
-  margin-right: 1rem;
-  padding: 0 0.25rem 0 0.25rem;
-  font-size: 1.1rem;
-  font-weight: 800;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-/* Name */
-h4 {
-  font-size: 1.25rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: 800;
-  /* border: 1px solid black; */
-  letter-spacing: 0.2rem;
-  white-space: nowrap;
-}
-
-button {
-  background-color: #db7444;
-  color: white;
-  padding: 0 2rem 0 2rem;
-  border-radius: 0.45rem;
-  border-color: #db7444;
+body,
+html {
   width: 100%;
-  font-size: 1.25rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: 800;
-  box-shadow: 1px 1px 5px 2px black;
-  /* border: 1px solid black; */
-}
-
-/* Birthday Reminder Counter */
-h2 {
-  font-size: 1.7rem;
-  margin-top: 1rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: 800;
-  font-style: italic;
-  text-align: center;
+  height: 100%;
 }
 
 #root {
@@ -60,33 +17,67 @@ h2 {
   justify-content: center;
 }
 
-* {
-  margin: 0;
-}
-
-body {
-  background-color: #db7444;
-}
-
-.main-content {
-  box-sizing: border-box;
-  position: relative;
-  background-color: white;
-  border-radius: 0.7rem;
-  margin: 10rem 10rem 5rem 10rem;
-  padding: 2rem;
+.people-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  box-shadow: 1px 1px 8px 3px black;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
 }
 
-.person {
+.people-container > h1 {
+  font-size: 4rem;
+  letter-spacing: 5px;
+}
+
+.people-container > button {
+  width: 30%;
+  padding: 0.5rem 1rem;
+  background-color: inherit;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  border: 3px solid black;
+}
+
+.people-container__content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  margin-top: 1.25rem;
-  height: 90px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.person-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: 3px solid black;
+}
+
+.person-container > img {
+  width: 30%;
+  height: auto;
+  border-radius: 2rem;
+}
+
+.person-container__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.person-container__info > h2 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.person-container__info > p {
+  align-self: flex-end;
+  font-size: 2rem;
 }

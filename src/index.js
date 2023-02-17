@@ -1,15 +1,11 @@
+// React
 import React from "react";
 import ReactDOM from "react-dom";
-
-// Import App
-import { People } from "./app";
 
 // Import CSS
 import "./index.css";
 
-// Main App
-const MainApp = () => {
-  return <People></People>;
-};
+// Import App
+import People from "./People";
 
-ReactDOM.render(<MainApp></MainApp>, document.getElementById("root"));
+ReactDOM.render(<People></People>, document.getElementById("root"));
