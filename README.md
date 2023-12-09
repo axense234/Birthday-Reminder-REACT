@@ -11,6 +11,7 @@ A simple React Project that focuses on the basics of react by displaying some pe
 ### Dependencies
 
 - Check package.json for details.
+- **Docker** installed on your machine if you want to install using **Docker**
 
 ### Installing
 
@@ -20,9 +21,18 @@ git clone https://github.com/axense234/Birthday-Reminder-REACT.git
 
 ### Executing program
 
+- **Installation using NPM**
+
 ```
 npm install
 npm start
+```
+
+- **Installation using Docker**
+
+```
+docker build -t birthday-reminder-react:0.3.0 .
+docker run -p 3000:3000 birthday-reminder-react:0.3.0
 ```
 
 ## **Authors**
@@ -32,7 +42,7 @@ npm start
 ## **Version History**
 
 - 0.3
-  - Analyzed the code to gather to-do tasks and improved the site a little.
+  - Analyzed the code to gather to-do tasks and improved the site a little. Also played around with Docker.
 - 0.2
   - Improved React logic and also made the website look better
   - See [commit change](https://github.com/axense234/Accordion-REACT/commits/master) or See [release history](https://github.com/axense234/Accordion-REACT/releases)
