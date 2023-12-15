@@ -21,18 +21,20 @@ git clone https://github.com/axense234/Birthday-Reminder-REACT.git
 
 ### Executing program
 
-- **Installation using NPM**
+- **Execution using NPM**
 
 ```
 npm install
 npm start
 ```
 
-- **Installation using Docker**
+- **Execution using Docker**
 
 ```
 docker build -t birthday-reminder-react:0.3.0 .
-docker run -p 3000:3000 birthday-reminder-react:0.3.0
+docker stop birthday-reminder-react-app
+docker rm birthday-reminder-react-app
+docker run -p 3000:3000 -d --name birthday-reminder-react-app birthday-reminder-react:0.3.0
 ```
 
 ## **Authors**
